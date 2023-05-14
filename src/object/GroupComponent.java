@@ -1,26 +1,29 @@
+package object;
+
 import java.awt.*;
 import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 
-public class GroupComponent extends Component implements Group{
-    private ArrayList<Component> groupComponents = new ArrayList<Component>();
-    private ArrayList<Point> ports = new ArrayList<Point>();
+public class GroupComponent extends UMLElement {
+    private ArrayList<UMLElement> groupComponents = new ArrayList<>();
+    private ArrayList<Point> ports = new ArrayList<>();
     private Rectangle2D  bound = new Rectangle2D.Double();
 
     public GroupComponent() {}
 
-    public void addComponent(Component component) {
-        groupComponents.add(component);
+    public void addComponent(UMLElement ele) {
+        groupComponents.add(ele);
         updateBound();
     }
-    public ArrayList<Component> getGroupComponents() {
+    public ArrayList<UMLElement> getGroupComponents() {
         return groupComponents;
     }
 
     public void draw(Graphics2D g2) {
-        for (Component c : groupComponents) {
+        for (UMLElement c : groupComponents) {
             c.draw(g2);
         }
+        System.out.println("GroupComp GroupSelected:"+ getSelected());
 
         if (getSelected()) {
             showPorts(g2);
@@ -32,7 +35,7 @@ public class GroupComponent extends Component implements Group{
         int minY = Integer.MAX_VALUE;
         int maxX = Integer.MIN_VALUE;
         int maxY = Integer.MIN_VALUE;
-        for (Component c : groupComponents) {
+        for (UMLElement c : groupComponents) {
             Rectangle2D r = c.getBound();
             if (r.getMinX() < minX) {
                 minX = (int) r.getMinX();
@@ -66,13 +69,14 @@ public class GroupComponent extends Component implements Group{
 
     public void showPorts (Graphics2D g2d) {
         for (Point p : ports) {
-//            g2d.setColor(Color.RED);
+            g2d.setColor(Color.RED);
             g2d.fillRect(p.x, p.y, 5, 5);
         }
+        g2d.setColor(Color.BLACK);
     }
 
     public void move(int x, int y) {
-        for (Component c : groupComponents) {
+        for (UMLElement c : groupComponents) {
             c.move(x, y);
         }
         updateBound();

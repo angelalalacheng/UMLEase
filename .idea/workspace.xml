@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="179ddefc-2166-40db-9990-a06a1aa1b62a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/AssociationLineMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/ClassMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/CompositionLineMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/ConnectionMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/GeneralizationLineMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/Mode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/SelectMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mode/UseCaseMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/BigFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Canvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ModeButton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AssociationLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/AssociationLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonCluster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ClassComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/UMLElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompositionLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/CompositionLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Connection2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Connection2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConnectionComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ConnectionComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GeneralizationLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/GeneralizationLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Group.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/GroupComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GroupFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuCluster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PortComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/PortComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RenameFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SelectFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UngroupFunction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UseCaseComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/UseCaseComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +54,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="oolab-v2" />
+                    <option name="lastUsedInstant" value="1683942904" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1683942903" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -43,6 +99,10 @@
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="object" />
+      <recent name="Object" />
     </key>
   </component>
   <component name="RunManager">
@@ -69,6 +129,17 @@
       <updated>1678971192767</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

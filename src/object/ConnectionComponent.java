@@ -1,8 +1,10 @@
-import java.awt.*;
-import java.awt.geom.Rectangle2D;
-import java.util.ArrayList;
+package object;
 
-public class ConnectionComponent extends Component {
+import java.awt.*;
+import java.awt.Component;
+import java.awt.geom.Rectangle2D;
+
+public class ConnectionComponent extends UMLElement {
     private int xStart, yStart, xEnd, yEnd;
 // record two object -> if drag A -> judge start or end -> update start point or end point
     public ConnectionComponent(int xStart, int yStart, int xEnd, int yEnd) {
@@ -16,9 +18,9 @@ public class ConnectionComponent extends Component {
         g2d.drawLine(xStart, yStart, xEnd, yEnd);
     }
 
-    public Rectangle2D getBound() {
-        return new Rectangle2D.Double(xEnd, yEnd, Math.abs(xEnd-xStart), Math.abs(yEnd-yStart));
-    }
+//    public Rectangle2D getBound() {
+//        return new Rectangle2D.Double(xEnd, yEnd, Math.abs(xEnd-xStart), Math.abs(yEnd-yStart));
+//    }
 
     public void move(int x, int y) {
         xStart += x;

@@ -1,10 +1,13 @@
-import java.awt.*;
+package object;
 
-public class Connection2 extends Component{
-    private Component start, end;
+import java.awt.*;
+import java.awt.Component;
+
+public class Connection2 extends java.awt.Component {
+    private java.awt.Component start, end;
     private int startX, startY, endX, endY;
     private Point p1, p2;
-    public Connection2(int xStart, int yStart, int xEnd, int yEnd, Component start, Component end) {
+    public Connection2(int xStart, int yStart, int xEnd, int yEnd, java.awt.Component start, Component end) {
         this.start = start;
         this.end = end;
         this.startX = xStart;
@@ -20,7 +23,7 @@ public class Connection2 extends Component{
         g2d.drawLine(p1.x, p1.y, p2.x, p2.y);
     }
 
-//    public Point findClosestPort(int x, int y, Component c) {
+//    public Point findClosestPort(int x, int y, Object.UMLElement c) {
 //        Point closestPort = new Point();
 //        double closestDistance = Double.MAX_VALUE;
 //
