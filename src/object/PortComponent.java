@@ -22,9 +22,14 @@ public class PortComponent {
         port.y += y;
         System.out.println("moving port: " + port.x + ", " + port.y);
         System.out.println("connections: " + connections.size());
+
         for (ConnectionComponent connection : connections) {
             System.out.println("moving connection: " + connection);
-            connection.move(x, y);
+            if (portType==0) connection.move(x, y, 0, 0);
+            else if (portType==1) connection.move(0, 0, x, y);
+            else{
+                connection.move(x, y, x, y);
+            }
         }
     }
 

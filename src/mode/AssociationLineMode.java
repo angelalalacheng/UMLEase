@@ -21,7 +21,9 @@ public class AssociationLineMode extends Mode{
 
         Canvas canvas = (Canvas) e.getSource();
         PortComponent startClosest = canvas.findClosestPort(xStart, yStart);
+        startClosest.setPortType(0);
         PortComponent endClosest = canvas.findClosestPort(xEnd, yEnd);
+        endClosest.setPortType(1);
 
         AssociationLine line = new AssociationLine(startClosest.getPort().x, startClosest.getPort().y, endClosest.getPort().x, endClosest.getPort().y);
         canvas.addElement(line);

@@ -75,9 +75,9 @@ public class GroupComponent extends UMLElement {
         g2d.setColor(Color.BLACK);
     }
 
-    public void move(int x, int y) {
+    public void move(int xS, int yS, int xE, int yE) {
         for (UMLElement c : groupComponents) {
-            c.move(x, y);
+            c.move(xS, yS, 0, 0);
         }
         updateBound();
     }

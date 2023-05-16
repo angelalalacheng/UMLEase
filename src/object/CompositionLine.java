@@ -37,12 +37,12 @@ public class CompositionLine extends ConnectionComponent {
         g2d.draw(diamond);
     }
 
-    public void move(int x, int y) {
-        super.move(x, y);
-        xStart += x;
-        yStart += y;
-        xEnd += x;
-        yEnd += y;
+    public void move(int xS, int yS, int xE, int yE) {
+        super.move(xS, yS, xE, yE);
+        xStart += xS;
+        yStart += yS;
+        xEnd += xE;
+        yEnd += yE;
     }
 
 }

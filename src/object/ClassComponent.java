@@ -48,10 +48,10 @@ public class ClassComponent extends UMLElement {
         return port;
     }
 
-    public void move(int x, int y) {
-        xCor += x;
-        yCor += y;
-        updatePorts(x, y);
+    public void move(int xS, int yS, int xE, int yE) {
+        xCor += xS;
+        yCor += yS;
+        updatePorts(xS, yS);
     }
 
     public void updatePorts(int x, int y) {

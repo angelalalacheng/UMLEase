@@ -13,7 +13,7 @@ public class UMLElement {
     }
     public void draw(Graphics2D g2d) {
     }
-    public void move (int dx, int dy) {}
+    public void move (int dxStart, int dyStart, int dxEnd, int dyEnd) {}
 
 //    public ArrayList<Point> getPorts() {
 //        return new ArrayList<Point>();

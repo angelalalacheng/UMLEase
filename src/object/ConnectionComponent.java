@@ -22,14 +22,14 @@ public class ConnectionComponent extends UMLElement {
 //        return new Rectangle2D.Double(xEnd, yEnd, Math.abs(xEnd-xStart), Math.abs(yEnd-yStart));
 //    }
 
-    public void move(int x, int y) {
+    public void move(int xS, int yS, int xE, int yE) {
         // 希望move的時候，只有start or end會動(select object)
         // move都動(select group object)
 
-        xStart += x;
-        yStart += y;
-        xEnd += x;
-        yEnd += y;
+        xStart += xS;
+        yStart += yS;
+        xEnd += xE;
+        yEnd += yE;
     }
 
 }

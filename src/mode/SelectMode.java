@@ -35,7 +35,7 @@ public class SelectMode extends Mode{
         canvas.getSelectedComponents().forEach(component -> {
             int dx = releasePoint.x - pressPoint.x;
             int dy = releasePoint.y - pressPoint.y;
-            component.move(dx,  dy);
+            component.move(dx,  dy, 0, 0);
             pressPoint = releasePoint;//中繼點
         });
     }
