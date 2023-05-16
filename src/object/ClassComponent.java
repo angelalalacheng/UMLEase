@@ -31,10 +31,10 @@ public class ClassComponent extends UMLElement {
     }
 
     public void setPorts() {
-        port.add(new PortComponent(new Point(xCor+50, yCor))); //N
-        port.add(new PortComponent(new Point(xCor+100, yCor+45))); //E
-        port.add(new PortComponent(new Point(xCor+50, yCor+90))); //S
-        port.add(new PortComponent(new Point(xCor, yCor+45))); //W
+        port.add(new PortComponent(new Point(xCor+50, yCor), -1)); //N
+        port.add(new PortComponent(new Point(xCor+100, yCor+45), -1)); //E
+        port.add(new PortComponent(new Point(xCor+50, yCor+90), -1)); //S
+        port.add(new PortComponent(new Point(xCor, yCor+45), -1)); //W
     }
 
     public void showPorts (Graphics2D g2d) {

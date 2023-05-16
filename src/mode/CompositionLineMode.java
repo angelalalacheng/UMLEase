@@ -23,6 +23,10 @@ public class CompositionLineMode extends Mode{
         PortComponent startClosest = canvas.findClosestPort(xStart, yStart);
         PortComponent endClosest = canvas.findClosestPort(xEnd, yEnd);
 
-        canvas.addElement(new CompositionLine(startClosest.getPort().x, startClosest.getPort().y, endClosest.getPort().x, endClosest.getPort().y));
+        CompositionLine line = new CompositionLine(startClosest.getPort().x, startClosest.getPort().y, endClosest.getPort().x, endClosest.getPort().y);
+        canvas.addElement(line);
+
+        startClosest.addConnection(line);
+        endClosest.addConnection(line);
     }
 }

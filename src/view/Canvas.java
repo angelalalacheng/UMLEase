@@ -122,7 +122,7 @@ public class Canvas extends JPanel {
 
         for (UMLElement c : Elements) {
             if (c.getBound().contains(x, y)) {
-                closestPort = new PortComponent(new Point(0, 0));
+                closestPort = new PortComponent(new Point(0, 0), -1);
 
                 for (PortComponent port : c.getPorts()) {
                     double distance = new Point(x, y).distance(port.getPort());

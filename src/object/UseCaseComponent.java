@@ -29,10 +29,10 @@ public class UseCaseComponent extends UMLElement {
     }
 
     public void setPorts() {
-        port.add(new PortComponent(new Point(xCor+50, yCor))); //N
-        port.add(new PortComponent(new Point(xCor+100, yCor+25))); //E
-        port.add(new PortComponent(new Point(xCor+50, yCor+50))); //S
-        port.add(new PortComponent(new Point(xCor, yCor+25))); //W
+        port.add(new PortComponent(new Point(xCor+50, yCor), -1)); //N
+        port.add(new PortComponent(new Point(xCor+100, yCor+25), -1)); //E
+        port.add(new PortComponent(new Point(xCor+50, yCor+50), -1)); //S
+        port.add(new PortComponent(new Point(xCor, yCor+25), -1)); //W
     }
 
     public void showPorts (Graphics2D g2d) {
@@ -54,7 +54,6 @@ public class UseCaseComponent extends UMLElement {
 
     public void updatePorts(int x, int y) {
         for (PortComponent p : port) {
-            System.out.println(p);
             p.move(x,y);
         }
     }

@@ -21,8 +21,14 @@ public class GeneralizationLineMode extends Mode{
 
         Canvas canvas = (Canvas) e.getSource();
         PortComponent startClosest = canvas.findClosestPort(xStart, yStart);
+        startClosest.setPortType(0);
         PortComponent endClosest = canvas.findClosestPort(xEnd, yEnd);
+        endClosest.setPortType(1);
 
-        canvas.addElement(new GeneralizationLine(startClosest.getPort().x, startClosest.getPort().y, endClosest.getPort().x, endClosest.getPort().y));
+        GeneralizationLine line = new GeneralizationLine(startClosest.getPort().x, startClosest.getPort().y, endClosest.getPort().x, endClosest.getPort().y);
+        canvas.addElement(line);
+
+        startClosest.addConnection(line);
+        endClosest.addConnection(line);
     }
 }

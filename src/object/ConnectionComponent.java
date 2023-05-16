@@ -23,6 +23,9 @@ public class ConnectionComponent extends UMLElement {
 //    }
 
     public void move(int x, int y) {
+        // 希望move的時候，只有start or end會動(select object)
+        // move都動(select group object)
+
         xStart += x;
         yStart += y;
         xEnd += x;
