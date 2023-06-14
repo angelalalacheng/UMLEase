@@ -3,6 +3,7 @@ package view;
 import mode.Mode;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -11,6 +12,7 @@ public class ModeButton extends JButton implements ActionListener {
     public ModeButton(String text, Mode mode){
         super(text);
         this.mode = mode;
+        this.setBackground(Color.BLACK);
         addActionListener(this);
     }
     @Override

@@ -87,14 +87,14 @@ public class Canvas extends JPanel {
         }
         return selectedComponents;
     }
-    public void groupSelectedComponents() {
+    public void group() {
         ArrayList<UMLElement> selectedComponents = getSelectedComponents();
         System.out.println("Grouping " + selectedComponents.size());
         if (selectedComponents.size() > 1) {
             addGroupElement(selectedComponents);
         }
     }
-    public void ungroupSelectedComponents() {
+    public void ungroup() {
         ArrayList<UMLElement> selectedComponents = getSelectedComponents();
         for (UMLElement c : selectedComponents) {
             if (c.getIsGroupComponent()) {

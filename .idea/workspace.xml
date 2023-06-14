@@ -6,18 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="179ddefc-2166-40db-9990-a06a1aa1b62a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mode/AssociationLineMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mode/AssociationLineMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mode/CompositionLineMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mode/CompositionLineMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mode/SelectMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mode/SelectMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/AssociationLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/AssociationLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ClassComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ClassComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/CompositionLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/CompositionLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ConnectionComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ConnectionComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/GeneralizationLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/GeneralizationLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/GroupComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/GroupComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/PortComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/PortComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/UMLElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/UMLElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/UseCaseComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/UseCaseComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mode/Mode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mode/Mode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Connection2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/BigFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/BigFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Canvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Canvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ModeButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ModeButton.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

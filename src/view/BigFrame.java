@@ -17,7 +17,7 @@ public class BigFrame extends JFrame {
         initFrame();
     }
 
-    public void initFrame (){
+    public void initFrame(){
         this.setTitle("UML Editor");
         this.setSize(800, 600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -93,11 +93,11 @@ public class BigFrame extends JFrame {
 
         group.addActionListener(e -> {
             System.out.println("group");
-            canvas.groupSelectedComponents();
+            canvas.group();
         });
         ungroup.addActionListener(e -> {
             System.out.println("ungroup");
-            canvas.ungroupSelectedComponents();
+            canvas.ungroup();
         });
         changeName.addActionListener(e -> {
             System.out.println("changeName");

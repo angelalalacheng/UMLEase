@@ -2,7 +2,6 @@ package mode;
 
 import javax.swing.event.MouseInputListener;
 import java.awt.event.MouseEvent;
-import java.io.Serializable;
 
 public class Mode implements MouseInputListener{
     private static Mode currentMode;

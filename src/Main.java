@@ -1,7 +1,5 @@
 import view.BigFrame;
 
-import javax.swing.*;
-import java.awt.*;
 
 public class Main {
 
@@ -9,3 +7,8 @@ public class Main {
         new BigFrame();
     }
 }
+
+// bug? can not connect to group object
+// button change the color when press
+// button position
+// object name place modify
